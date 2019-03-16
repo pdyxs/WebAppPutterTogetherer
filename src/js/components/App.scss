@@ -1,0 +1,47 @@
+
+//Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.rounded-bottom-0,
+.rounded-bottom-0.input-group .input-group-text,
+.rounded-bottom-0.input-group .form-control {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.rounded-top-0,
+.rounded-top-0.input-group .input-group-text,
+.rounded-top-0.input-group .form-control {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.border-top-0 {
+  border-top: 0 !important;
+}
+
+.unlock-edit-button .unlocked {
+  display: none;
+}
+
+.unlock-edit-button.editing .unlocked {
+  display: block;
+}
+
+.unlock-edit-button.editing .locked {
+  display: none;
+}
+
+.display-5 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.bg-white-50 {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.bg-black-50 {
+  background-color: rgba(0,0,0,0.5);
+}
