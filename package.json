@@ -5,7 +5,9 @@
   "scripts": {
     "build-icons": "cd windowdresser && npm install && node windowdresser.js && cp -R dist/app ../img",
     "build-web": "webpack",
-    "build-mobile": "webpack && phonegap build ios && phonegap build android",
+    "build-mobile": "webpack",
+    "build-android": "npm run build-mobile && phonegap build android",
+    "build-ios": "npm run build-mobile && phonegap build ios",
     "start": "webpack --watch",
     "deploy-web": "webpack && surge ./www",
     "version": "PACKAGE_VERSION=$(node -p -e \"require('./package.json').version\") && cordova-update-config --appversion ${PACKAGE_VERSION} && git add ./config.xml"
